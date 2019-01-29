@@ -11,30 +11,38 @@
 </head>
 <body>
 <br>
-<p align="center">Tic Tac Toe</p>
-<div  class="scoring">
-	X : <span id="Xscore">0</span> 
+<div class="container">
+	<p align="center">Tic Tac Toe</p>
 	<br>
-	O : <span id="Oscore">0</span>
+	<br>
+	<div class="row">
+		<div  class="scoring col-lg-3">
+			X : <span id="Xscore">0</span> 
+			<br>
+			O : <span id="Oscore">0</span>
+		</div>
+		<div class="col-lg-6">
+		<table class="shadow" align="center">
+			<tr>
+				<td id="td00"><span></span></td>
+				<td class="vertical" id="td01"><span></span></td>
+				<td id="td02"><span></span></td>
+			</tr>
+			<tr>
+				<td class="horizontal" id="td10"><span></span></td>
+				<td class="center" id="td11"><span></span></td>
+				<td class="horizontal" id="td12"><span></span></td>
+			</tr>
+			<tr>
+				<td id="td20"><span></span></td>
+				<td class="vertical" id="td21"><span></span></td>
+				<td id="td22"><span></span></td>
+			</tr>
+		</table>
+		</div>
+	</div>
+	<p align="center" id="clear">CLEAR</p>
+	<script type="text/javascript" src="TicTacToe.js"></script>
 </div>
-<table class="shadow">
-	<tr>
-		<td id="td00"><span></span></td>
-		<td class="vertical" id="td01"><span></span></td>
-		<td id="td02"><span></span></td>
-	</tr>
-	<tr>
-		<td class="horizontal" id="td10"><span></span></td>
-		<td class="center" id="td11"><span></span></td>
-		<td class="horizontal" id="td12"><span></span></td>
-	</tr>
-	<tr>
-		<td id="td20"><span></span></td>
-		<td class="vertical" id="td21"><span></span></td>
-		<td id="td22"><span></span></td>
-	</tr>
-</table>
-<p align="center" id="clear">CLEAR</p>
-<script type="text/javascript" src="TicTacToe.js"></script>
 </body>
 </html>
