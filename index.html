@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TicTacToe</title>
-	<link rel="stylesheet" type="text/css" href="TicTacToe.css">
-	<style>
-		@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
-	</style>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-<br>
-<div class="container">
-	<p align="center">Tic Tac Toe</p>
-	<br>
-	<br>
-	<div class="row">
-		<div  class="scoring col-lg-3">
-			X : <span id="Xscore">0</span> 
-			<br>
-			O : <span id="Oscore">0</span>
+	<h1>CARDS</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4"><h2 class="turnDisplay" id="userTurnDisplay">User</h2></div>
+			<div class="col-lg-4 shadow" id="dealButton"><h2>****** DEAL ******</h2></div>
+			<div class="col-lg-4"><h2 id="compTurnDisplay">Comp</h2></div>
 		</div>
 		<br>
+		<div class="row">
+			<span class="shadow cards userCardsDisplay userCardOne col-lg-2"></span>
+			<span class="shadow cards userCardsDisplay userCardTwo col-lg-2"></span>
+			<span class="shadow cards userCardsDisplay userCardThree col-lg-2"></span>
+			<span class="shadow cards scoreBoard col-lg-2">
+				<h2>POT VALUE:</h2>
+				<h2 id="potValueDisplay">0</h2>
+				<h3>Bet : <span id="betDisplay">100</span></h3>
+				<br>
+				<h4>Balance : <span id="balanceDisplay">0</span></h4>
+			</span>
+			<span class="shadow cards compCardsDisplay compCardOne col-lg-2"></span>
+			<span class="shadow cards compCardsDisplay compCardTwo col-lg-2"></span>
+			<span class="shadow cards compCardsDisplay compCardThree col-lg-2"></span>
+		</div>
 		<br>
-		<br>
-		<div class="col-lg-6">
-		<table class="shadow" align="center">
-			<tr>
-				<td id="td00"><span></span></td>
-				<td class="vertical" id="td01"><span></span></td>
-				<td id="td02"><span></span></td>
-			</tr>
-			<tr>
-				<td class="horizontal" id="td10"><span></span></td>
-				<td class="center" id="td11"><span></span></td>
-				<td class="horizontal" id="td12"><span></span></td>
-			</tr>
-			<tr>
-				<td id="td20"><span></span></td>
-				<td class="vertical" id="td21"><span></span></td>
-				<td id="td22"><span></span></td>
-			</tr>
-		</table>
+		<div class="row" id="bottomStripe">
+			<div class="col-lg-5">
+				<span class="button shadow" id="betButton">BET</span>
+				<span class="button shadow" id="raiseButton">RAISE</span>
+				<span class="button shadow" id="showButton">SHOW</span>
+				<span class="button shadow" id="packButton">PACK</span>
+			</div>
+			<div class="col-lg-2"></div>
+			<div class="col-lg-5">
+				<h2 id="compTurnText">YOUR TURN !!</h2>
+			</div>
+
 		</div>
 	</div>
-	<p align="center" id="clear">CLEAR</p>
-	<script type="text/javascript" src="TicTacToe.js"></script>
-</div>
+<script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>
