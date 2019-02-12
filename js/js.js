@@ -8,6 +8,7 @@ balanceDisplay.textContent=balance;
 var potValueDisplay=document.querySelector("#potValueDisplay");
 var turn=0;//even - user's turn
 var compTurnText=document.querySelector("#compTurnText");
+
 for(var i=0;9>i;i++)
 {
 	var cardName="assets/cards/card_b_d"+(i+2)+"_large.png";//diamond
@@ -75,7 +76,11 @@ for(var i=36;40>i;i++)
 	}
 
 }
-
+for(var i=0;52>i;i++)
+{
+	var temp="url('"+allCardsArr[i].name+"')";
+	$(this).css("background-image",temp);
+}
 var userValueSum=0;
 var compValueSum=0;
 $(".userCardsDisplay").on("click",function(){
